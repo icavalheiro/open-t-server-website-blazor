@@ -1,0 +1,12 @@
+<div class="side-menu-container">
+    <div class="top"></div>
+    <div class="content">
+        @ChildContent
+    </div>
+    <div class="bottom"></div>
+</div>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

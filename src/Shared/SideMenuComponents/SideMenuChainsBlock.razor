@@ -1,0 +1,22 @@
+<div class="side-menu-chains-block">
+    <div class="chains"></div>
+    @if (BlankContent)
+    {
+        @ChildContent
+    }
+    else
+    {
+        <div class="content-body">
+            @ChildContent
+        </div>
+    }
+    <div class="chains"></div>
+</div>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public bool BlankContent { get; set; }
+}

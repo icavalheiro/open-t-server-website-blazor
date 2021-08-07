@@ -1,0 +1,13 @@
+@inject IConfiguration Configuration
+
+<SideMenuContainer>
+    <SideMenuChainsBlock>
+        <BigFatButton href="/download">
+            @Label
+        </BigFatButton>
+    </SideMenuChainsBlock>
+</SideMenuContainer>
+
+@code {
+    string Label => Configuration.GetValue<string>("Server:Labels:BigDownload");
+}

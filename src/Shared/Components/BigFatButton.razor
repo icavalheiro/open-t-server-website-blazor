@@ -1,0 +1,15 @@
+<div class="big-fat-button-component">
+    <NavLink href="@href" class="big-button fat-font">
+        <div class="btn">
+            @ChildContent
+        </div>
+    </NavLink>
+</div>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public string href { get; set; }
+}

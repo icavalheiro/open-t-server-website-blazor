@@ -1,0 +1,16 @@
+.side-menu-container {
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.top,
+.bottom {
+    height: 12px;
+    background-image: url(/images/layout/nav-menu-top-img.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bottom {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,18 @@
+.side-menu-chains-block {
+    display: grid;
+    grid-template-columns: 7px auto 7px;
+    padding: 0 5px;
+}
+
+.chains {
+    background-image: url(/images/layout/chain.gif);
+    background-repeat: repeat-y;
+    background-position: top left;
+    height: 100%;
+}
+
+.content-body {
+    background-image: url(/images/layout/sidemenu-chains-background.gif);
+    background-position-x: center;
+    padding: 5px;
+}

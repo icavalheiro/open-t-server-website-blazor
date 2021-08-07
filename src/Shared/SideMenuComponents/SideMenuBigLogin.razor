@@ -1,0 +1,17 @@
+@inject IConfiguration Configuration
+
+<SideMenuContainer>
+    <SideMenuChainsBlock>
+        <BigFatButton href="/login">
+            @LoginLabel
+        </BigFatButton>
+        <NavLink href="/create-account">
+            @CreateAccountLabel
+        </NavLink>
+    </SideMenuChainsBlock>
+</SideMenuContainer>
+
+@code {
+    string LoginLabel => Configuration.GetValue<string>("Server:Labels:BigLogin");
+    string CreateAccountLabel => Configuration.GetValue<string>("Server:Labels:BigLoginCreateAccount");
+}

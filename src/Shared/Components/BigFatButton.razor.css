@@ -1,0 +1,10 @@
+.big-fat-button-component ::deep a {
+    color: rgb(245, 212, 27);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.big-fat-button-component ::deep a:hover {
+    color: rgb(252, 229, 98);
+    text-decoration: none;
+}
