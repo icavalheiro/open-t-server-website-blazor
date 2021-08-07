@@ -3,7 +3,7 @@
     font-size: 1.3rem;
     text-decoration: none;
     background-image: url(/images/big-fat-btn.gif);
-    background-position: center center;
+    background-position: 0 0;
     background-repeat: no-repeat;
     min-width: 150px;
     min-height: 37px;
@@ -14,5 +14,5 @@
 
 .big-fat-button-component ::deep a:hover {
     text-decoration: none;
-    background-image: url(/images/big-fat-btn-hover.gif);
+    background-position: 0 -37px;
 }

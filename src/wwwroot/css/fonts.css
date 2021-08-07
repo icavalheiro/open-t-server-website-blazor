@@ -18,7 +18,8 @@ body {
 
 .fat-font {
     font-family: "M PLUS Rounded 1c", sans-serif;
-    font-weight: 800;
+    font-weight: 900;
+    letter-spacing: -0.05em;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.664);
 }
