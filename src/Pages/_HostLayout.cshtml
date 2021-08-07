@@ -4,6 +4,15 @@
 @{
     Layout = null;
     var serverName = Configuration.GetValue<string>("Server:Name");
+    var bgColor = Configuration.GetValue<string>("Server:HtmlBody:BackgroundColor");
+    var bgImage = Configuration.GetValue<string>("Server:HtmlBody:BackgroundArtwork");
+    var bgRepeat = Configuration.GetValue<string>("Server:HtmlBody:BackgroundRepeat");
+    var bgPosition = Configuration.GetValue<string>("Server:HtmlBody:BackgroundPosition");
+
+    string getBgStyle()
+    {
+        return $"--bg-color:{bgColor};--bg-image:{bgImage};--bg-position:{bgPosition};--bg-repeat:{bgRepeat}";
+    }
 }
 
 <!DOCTYPE html>
@@ -16,10 +25,11 @@
     <base href="~/" />
     <link href="css/reboot.css" rel="stylesheet" />
     <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
     <link href="TibiaWebsite.styles.css" rel="stylesheet" />
 </head>
 
-<body>
+<body style="@getBgStyle()">
     @RenderBody()
 
     <script src="_framework/blazor.server.js"></script>

@@ -1,5 +1,11 @@
 .page {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    max-width: 1280px;
+    min-width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+}
+
+.main {
+    padding-top: 150px;
 }

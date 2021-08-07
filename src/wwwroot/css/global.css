@@ -1,0 +1,7 @@
+body {
+    background-color: var(--bg-color);
+    background-image: var(--bg-image);
+    background-position: var(--bg-position);
+    background-repeat: var(--bg-repeat);
+    color: white;
+}
