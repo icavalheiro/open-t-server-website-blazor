@@ -1,10 +1,18 @@
 .big-fat-button-component ::deep a {
-    color: rgb(245, 212, 27);
+    color: rgb(248, 209, 101);
     font-size: 1.3rem;
     text-decoration: none;
+    background-image: url(/images/big-fat-btn.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 150px;
+    min-height: 37px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .big-fat-button-component ::deep a:hover {
-    color: rgb(252, 229, 98);
     text-decoration: none;
+    background-image: url(/images/big-fat-btn-hover.gif);
 }
