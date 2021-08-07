@@ -1,0 +1,16 @@
+.create-account-wrapper {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.create-account-wrapper ::deep a {
+    color: rgb(224, 197, 174);
+    text-shadow: 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black;
+}
+
+.create-account-wrapper ::deep a:hover {
+    color: rgb(240, 228, 218);
+    text-shadow: 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black,
+        0 0 6px black, 0 0 6px black, 0 0 6px black;
+    text-decoration: none;
+}
