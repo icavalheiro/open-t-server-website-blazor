@@ -1,12 +1,19 @@
 @inject IConfiguration Configuration
 
 <div class="side-menu-header">
+
+    <div class="subtext">
+        @ServerSubtitle
+    </div>
     <div class="server-name tibia-font">
         @ServerName
     </div>
+
+
 </div>
 
 
 @code {
     string ServerName => Configuration.GetValue<string>("Server:Name");
+    string ServerSubtitle => Configuration.GetValue<string>("Server:Subtitle");
 }
