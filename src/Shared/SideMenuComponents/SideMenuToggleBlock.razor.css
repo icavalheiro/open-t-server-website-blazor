@@ -12,6 +12,7 @@
     color: rgb(212, 178, 148);
     text-shadow: 0 -2px 0 black, -1px 0 0 black;
     cursor: pointer;
+    user-select: none;
 }
 
 a.side-menu-toggle-block:hover {

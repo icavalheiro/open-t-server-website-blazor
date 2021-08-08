@@ -9,7 +9,7 @@
             @entry.Name
         </SideMenuToggleBlock>
 
-        <SideMenuChainsBlock BlankContent="true" Show="@entry.IsOpened">
+        <SideMenuChainsBlock BlankContent="true" Show="@entry.IsOpened" Height="@(entry.Items.Count() * ToggleEntryHeight)">
             <div class="menu-entries">
                 @foreach (var item in entry.Items)
                 {
@@ -25,6 +25,8 @@
 
 
 @code {
+
+    const int ToggleEntryHeight = 21;
 
     void ToggleEntry(NavMenuEntry entry)
     {

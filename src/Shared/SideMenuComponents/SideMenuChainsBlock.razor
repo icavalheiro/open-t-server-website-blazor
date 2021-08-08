@@ -1,4 +1,4 @@
-<div class='side-menu-chains-block @((Show) ? "" : "hide")'>
+<div class='side-menu-chains-block @((Show) ? "" : "hide")' style="@GetHeightStyle()">
     <div class="chains"></div>
     @if (BlankContent)
     {
@@ -21,5 +21,15 @@
     public bool BlankContent { get; set; }
 
     [Parameter]
+    public int? Height { get; set; }
+
+    [Parameter]
     public bool Show { get; set; } = true;
+
+    string GetHeightStyle()
+    {
+        var value = (Height?.ToString() + "px") ?? "unset";
+
+        return $"--max-height:{value};";
+    }
 }
