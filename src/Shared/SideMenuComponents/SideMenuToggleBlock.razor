@@ -1,0 +1,18 @@
+<a class="side-menu-toggle-block" @onclick:preventDefault="true" @onclick="() => OnClick?.Invoke()">
+    <div class="toggle-icon" style="--icon-bg:@Icon">
+    </div>
+    <div class="toggle-content tibia-font">
+        @ChildContent
+    </div>
+</a>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public string Icon { get; set; }
+
+    [Parameter]
+    public Action OnClick { get; set; }
+}

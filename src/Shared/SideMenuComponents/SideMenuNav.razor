@@ -1,5 +1,44 @@
+@inject INavMenuService NavMenuService
+@implements IDisposable
+
+
 <SideMenuContainer>
-    <SideMenuChainsBlock BlankContent="true">
-        Latest News
-    </SideMenuChainsBlock>
+    @foreach (var entry in NavMenuService.Entries)
+    {
+        <SideMenuToggleBlock Icon="@entry.Icon" OnClick="() => ToggleEntry(entry)">
+            @entry.Name
+        </SideMenuToggleBlock>
+
+        <SideMenuChainsBlock BlankContent="true" Show="@entry.IsOpened">
+            <div class="menu-entries">
+                @foreach (var item in entry.Items)
+                {
+                    <NavLink href="@item.Href">
+                        @item.Name
+                    </NavLink>
+                }
+            </div>
+        </SideMenuChainsBlock>
+    }
+
 </SideMenuContainer>
+
+
+@code {
+
+    void ToggleEntry(NavMenuEntry entry)
+    {
+        entry.IsOpened = !entry.IsOpened;
+        NavMenuService.AddOrUpdate(entry);
+    }
+
+    protected override void OnInitialized()
+    {
+        NavMenuService.OnUpdate += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        NavMenuService.OnUpdate -= StateHasChanged;
+    }
+}

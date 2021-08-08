@@ -1,0 +1,34 @@
+.side-menu-toggle-block {
+    width: 170px;
+    height: 32px;
+    background-image: url(/images/layout/toggle-background.gif);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    display: grid;
+    grid-template-columns: 32px auto;
+    margin: auto;
+    padding: 0 8px;
+    font-size: 1.3rem;
+    color: rgb(212, 178, 148);
+    text-shadow: 0 -2px 0 black, -1px 0 0 black;
+    cursor: pointer;
+}
+
+a.side-menu-toggle-block:hover {
+    text-decoration: none;
+    background-position: 0 -32px;
+}
+
+.toggle-content {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.toggle-icon {
+    background-image: var(--icon-bg);
+    width: 32px;
+    height: 32px;
+    background-position: center center;
+    background-size: cover;
+}
