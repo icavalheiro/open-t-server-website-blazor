@@ -1,0 +1,13 @@
+<div class="content-container">
+    <div class="border-top"></div>
+    <div class="content">
+        @ChildContent
+    </div>
+    <div class="border-bottom"></div>
+</div>
+
+@code {
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}
