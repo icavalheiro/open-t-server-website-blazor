@@ -1,13 +1,18 @@
 <div class="content-container">
-    <div class="border-top"></div>
-    <div class="content">
-        @ChildContent
+    <div class="border-top">
+        <div class="corner-left"></div>
+        <div class="corner-right"></div>
     </div>
-    <div class="border-bottom"></div>
+
+    @ChildContent
+
+    <div class="border-bottom">
+        <div class="corner-left"></div>
+        <div class="corner-right"></div>
+    </div>
 </div>
 
 @code {
-
     [Parameter]
     public RenderFragment ChildContent { get; set; }
 }

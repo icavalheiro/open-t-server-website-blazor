@@ -1,7 +1,44 @@
 .content-container {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
     color: #5a2800;
     border-left: 2px solid #3a3738;
     border-right: 2px solid #3a3738;
     background-color: #debb9d;
+}
+
+.content-wrapper {
+    padding: 4px;
+}
+
+.corner-left,
+.corner-right {
+    background-image: url(/images/layout/container-corner.gif);
+    position: absolute;
+    top: -4px;
+    width: 17px;
+    height: 17px;
+}
+
+.corner-left {
+    left: -5px;
+}
+
+.corner-right {
+    right: -5px;
+    transform: rotate(90deg);
+}
+
+.content {
+    padding: 4px;
+    background-color: #fff2db;
+    color: #5a2800;
+    border: solid 1px #793d03;
+}
+
+.border-top,
+.border-bottom {
+    position: relative;
+    background-image: url(/images/layout/container-border.gif);
+    background-repeat: repeat-x;
+    height: 6px;
 }

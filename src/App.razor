@@ -4,7 +4,16 @@
     </Found>
     <NotFound>
         <LayoutView Layout="@typeof(MainLayout)">
-            <p>Sorry, this page could not be found.</p>
+            <ContentContainer>
+                <Header>
+                    Page Not Found
+                </Header>
+                <ContentWrapper>
+                    <h1>404.</h1>
+
+                    <p>Sorry, this page could not be found.</p>
+                </ContentWrapper>
+            </ContentContainer>
         </LayoutView>
     </NotFound>
 </Router>

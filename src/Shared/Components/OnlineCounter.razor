@@ -1,0 +1,53 @@
+@inject IConfiguration Configuration
+
+<Header UseRed="true">
+    <div class="online-counter">
+        <div class="counters">
+
+            @if (!String.IsNullOrEmpty(TwitchUrl))
+            {
+                <a href="@TwitchUrl">
+                    <img src="/images/layout/icons/online-bar/icon-twitch.png" alt="Twitch Icon">
+                    <img src="/images/layout/icons/online-bar/icon-streamers.png" alt="Streamers"> @TwitchStreamers
+                    <img src="/images/layout/icons/online-bar/icon-viewers.png" alt="Viewers"> @TwitchViewers
+                </a>
+
+            }
+
+            @if (!String.IsNullOrEmpty(YoutubeUrl))
+            {
+                <a href="@YoutubeUrl">
+                    <img src="/images/layout/icons/online-bar/icon-youtube.png" alt="Twitch Icon">
+                    <img src="/images/layout/icons/online-bar/icon-streamers.png" alt="Streamers"> @YoutubeStreamers
+                    <img src="/images/layout/icons/online-bar/icon-viewers.png" alt="Viewers"> @YoutubeViewers
+                </a>
+
+            }
+
+            @if (!String.IsNullOrEmpty(PressKitUrl))
+            {
+                <a href="@PressKitUrl">
+                    <img src="/images/layout/icons/online-bar/icon-download.png" alt="Download Fankit">
+                    Fankit
+                </a>
+
+            }
+
+        </div>
+        <span></span>
+        <div class="counters">
+            <img src="/images/layout/icons/online-bar/ranks.png" alt="Online Players">
+            347 players online
+        </div>
+    </div>
+</Header>
+
+@code {
+    string TwitchUrl => Configuration.GetValue<string>("Server:Social:TwitchUrl");
+    string TwitchStreamers => Configuration.GetValue<string>("Server:Social:TwitchStreamers");
+    string TwitchViewers => Configuration.GetValue<string>("Server:Social:TwitchViewers");
+    string YoutubeUrl => Configuration.GetValue<string>("Server:Social:YoutubeUrl");
+    string YoutubeStreamers => Configuration.GetValue<string>("Server:Social:YoutubeStreamers");
+    string YoutubeViewers => Configuration.GetValue<string>("Server:Social:YoutubeViewers");
+    string PressKitUrl => Configuration.GetValue<string>("Server:Social:PressKitUrl");
+}

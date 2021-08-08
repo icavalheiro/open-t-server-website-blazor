@@ -1,0 +1,31 @@
+.online-counter {
+    color: white;
+    font-size: 0.7rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 0 5px 0 0;
+    height: 100%;
+}
+
+.online-counter span {
+    flex: 1;
+}
+
+.online-counter a {
+    color: white;
+}
+
+img {
+    margin: 0 3px;
+}
+
+.counters,
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    margin: 0 5px;
+}

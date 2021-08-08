@@ -1,0 +1,10 @@
+.content-wrapper {
+    padding: 4px;
+}
+
+.content {
+    padding: 4px;
+    background-color: #fff2db;
+    color: #5a2800;
+    border: solid 1px #793d03;
+}

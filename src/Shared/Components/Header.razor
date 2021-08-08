@@ -1,0 +1,19 @@
+<div class="content-header @GetBgClass()">
+    @ChildContent
+</div>
+
+@code {
+    [Parameter]
+    public bool UseRed { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    string GetBgClass()
+    {
+        if (UseRed)
+            return "red-bg";
+
+        return "green-bg tibia-font";
+    }
+}

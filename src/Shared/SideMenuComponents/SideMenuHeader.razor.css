@@ -18,8 +18,15 @@
 
 .server-name {
     text-align: center;
-    font-size: 2.15rem;
-    color: rgb(243, 155, 22);
-    text-shadow: -3px 0 0 black, 0 -2px 0 black, 0 0 5px black;
     margin-bottom: 18px;
+}
+
+.server-name ::deep a {
+    font-size: 2.15rem;
+    color: rgb(243, 228, 22);
+    text-shadow: -3px 0 0 black, 0 -2px 0 black, 0 0 5px black;
+}
+
+.server-name ::deep a:hover {
+    text-decoration: none;
 }
