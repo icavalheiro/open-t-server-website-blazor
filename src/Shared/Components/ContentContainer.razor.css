@@ -42,3 +42,7 @@
     background-repeat: repeat-x;
     height: 6px;
 }
+
+.border-bottom {
+    transform: rotate(180deg);
+}
