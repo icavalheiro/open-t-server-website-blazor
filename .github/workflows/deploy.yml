@@ -15,7 +15,7 @@ jobs:
       - name: Install dependencies
         run: dotnet restore src/TibiaWebsite.csproj 
       - name: Generate static files
-        run: dotnet run src/TibiaWebsite.csproj generate  
+        run: dotnet run --project src/TibiaWebsite.csproj generate  
       - uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
