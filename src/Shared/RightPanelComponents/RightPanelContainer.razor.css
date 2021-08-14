@@ -1,0 +1,16 @@
+.right-panel-container-header {
+    background-image: url(/images/layout/right-nav-header.gif);
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: -8px;
+    display: flex;
+    padding: 0 16px;
+}
+.right-panel-container-header div {
+    margin-top: -5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+}

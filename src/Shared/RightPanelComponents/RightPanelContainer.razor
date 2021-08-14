@@ -1,0 +1,21 @@
+<SideMenuContainer>
+    <div class="right-panel-container-header">
+        @if (!string.IsNullOrEmpty(Icon))
+        {
+            <div class="icon"><img src="@Icon"></div>
+        }
+        <div class="title tibia-font">@Title</div>
+    </div>
+    @ChildContent
+</SideMenuContainer>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public string Icon { get; set; }
+
+    [Parameter]
+    public string Title { get; set; }
+}

@@ -28,7 +28,7 @@ namespace TibiaWebsite
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<INavMenuService, NavMenuService>();
+            services.AddTransient<INavMenuService, NavMenuService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
