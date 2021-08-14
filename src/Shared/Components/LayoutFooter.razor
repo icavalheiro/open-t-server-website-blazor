@@ -1,0 +1,13 @@
+@inject IConfiguration Configuration
+
+<footer class="layout-footer">
+    <p>
+        Copyright by @ServerName. All rights reserved. <br />
+        Developed by <a href="https://ivansc.net">Ivan</a>. Layout by CipSoft GmbH.
+    </p>
+</footer>
+
+@code
+{
+    string ServerName => Configuration.GetValue<string>("Server:Name");
+}

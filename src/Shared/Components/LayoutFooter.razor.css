@@ -1,0 +1,9 @@
+.layout-footer p {
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+.layout-footer a {
+    color: white;
+    font-weight: bold;
+}

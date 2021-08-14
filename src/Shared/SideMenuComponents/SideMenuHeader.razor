@@ -3,11 +3,21 @@
 <div class="side-menu-header">
 
     <div class="subtext">
-        @ServerSubtitle
+        @if (ShowSubititle)
+        {
+            @ServerSubtitle
+        }
     </div>
     <div class="server-name tibia-font">
         <NavLink href="/">
-            @ServerName
+            @if (ShowName)
+            {
+                @ServerName
+            }
+            else
+            {
+                <text>&nbsp;</text>
+            }
         </NavLink>
 
     </div>
@@ -19,4 +29,6 @@
 @code {
     string ServerName => Configuration.GetValue<string>("Server:Name");
     string ServerSubtitle => Configuration.GetValue<string>("Server:Subtitle");
+    bool ShowName => Configuration.GetValue<bool>("Server:Header:Logo:ShowName");
+    bool ShowSubititle => Configuration.GetValue<bool>("Server:Header:Logo:ShowSubtitle");
 }
