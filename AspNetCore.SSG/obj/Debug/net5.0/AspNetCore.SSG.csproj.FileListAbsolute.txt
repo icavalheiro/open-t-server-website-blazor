@@ -1,0 +1,12 @@
+/home/ivan/Projects/tibia-website/AspNetCore.SSG/obj/Debug/net5.0/AspNetCore.SSG.csproj.AssemblyReference.cache
+/home/ivan/Projects/tibia-website/AspNetCore.SSG/obj/Debug/net5.0/AspNetCore.SSG.GeneratedMSBuildEditorConfig.editorconfig
+/home/ivan/Projects/tibia-website/AspNetCore.SSG/obj/Debug/net5.0/AspNetCore.SSG.AssemblyInfoInputs.cache
+/home/ivan/Projects/tibia-website/AspNetCore.SSG/obj/Debug/net5.0/AspNetCore.SSG.AssemblyInfo.cs
+/home/ivan/Projects/tibia-website/AspNetCore.SSG/obj/Debug/net5.0/AspNetCore.SSG.csproj.CoreCompileInputs.cache
+/home/ivan/Projects/tibia-website/AspNetCore.SSG/bin/Debug/net5.0/AspNetCore.SSG.deps.json
+/home/ivan/Projects/tibia-website/AspNetCore.SSG/bin/Debug/net5.0/AspNetCore.SSG.dll
+/home/ivan/Projects/tibia-website/AspNetCore.SSG/bin/Debug/net5.0/ref/AspNetCore.SSG.dll
+/home/ivan/Projects/tibia-website/AspNetCore.SSG/bin/Debug/net5.0/AspNetCore.SSG.pdb
+/home/ivan/Projects/tibia-website/AspNetCore.SSG/obj/Debug/net5.0/AspNetCore.SSG.dll
+/home/ivan/Projects/tibia-website/AspNetCore.SSG/obj/Debug/net5.0/ref/AspNetCore.SSG.dll
+/home/ivan/Projects/tibia-website/AspNetCore.SSG/obj/Debug/net5.0/AspNetCore.SSG.pdb
